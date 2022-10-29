@@ -32,6 +32,7 @@ h2 {
   color: var(--hd-cl);
   text-transform: capitalize;
   margin-bottom: 0;
+  margin-top: 0;
 }
 h3 {
   font-size: 18px;
@@ -163,15 +164,18 @@ header {
   line-height: 1.8;
 }
 
-/* services */
-.services {
+/* shared styling between all sections with a header and subheader */
+.services,
+.portfolio,
+.about,
+.contact {
   padding: var(--main-padding) 0;
 }
-.services__header {
+.services__header,
+.portfolio__header,
+.about__header,
+.contact__header {
   text-align: center;
-}
-.services__content__title {
-  margin-top: 0;
 }
 .services__subtitle,
 .about__subtitle,
@@ -182,6 +186,11 @@ header {
   position: relative;
   top: -50px;
   font-size: 20px;
+}
+/* services */
+
+.services__content__title {
+  margin-top: 0;
 }
 .services__content {
   display: flex;
@@ -216,4 +225,28 @@ header {
   height: 130%;
   background: var(--secondary-cl);
   z-index: -1;
+}
+
+/* portfolio */
+.portfolio {
+  background: var(--sections-bg);
+}
+.portfolio__content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.portfolio__item {
+  width: 360px;
+}
+.portfolio__container {
+  background: #fff;
+  margin: 0;
+  overflow: hidden;
+  padding: 20px;
+}
+.portfolio__image {
+  position: relative;
+  width: 360px;
+  height: 240px;
+  top: 10px;
 }
