@@ -223,7 +223,7 @@
   <!-- portfolio end -->
 
   <!-- about start -->
-  <section class="about">
+  <section class="about wrapper">
     <!-- about title -->
     <div class="about__header">
       <h2 class="about__title">about</h2>
@@ -232,8 +232,9 @@
     <!-- about content -->
     <div class="about__content">
       <!-- about side image -->
-      <aside class="about__image">
-        <img src="/images/about.jpg" alt="about image">
+      <aside class="about__image--container">
+        <img class="about__image" src="/images/about.jpg" alt="about image">
+        <span class="vertical-line"></span>
       </aside>
       <!-- about description -->
       <article class="about__description">
@@ -261,7 +262,7 @@
     </div>
     <!-- contact content -->
     <div class="contact__content">
-      <p class="contact__description">feel free to drop us a line at:</p>
+      <p class="contact__description">Feel free to drop us a line at:</p>
       <address class="contact__links">
         <!-- contact email -->
         <a class="contact__email" href="mailto:example@example.com">leonagency@mail.com</a>
@@ -269,9 +270,12 @@
         <!-- social media links -->
         <ul class="contact__social">
           <p class="contact__social--description">find us on social networks</p>
-          <li class="contact__social--links"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
-          <li class="contact__social--links"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="contact__social--links"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+          <li class="contact__social--links"><a class="social__links" href="https://youtube.com"><i
+                class="fab fa-youtube"></i></a></li>
+          <li class="contact__social--links"><a class="social__links" href="https://facebook.com"><i
+                class="fab fa-facebook-f"></i></a></li>
+          <li class="contact__social--links"><a class="social__links" href="https://twitter.com"><i
+                class="fab fa-twitter"></i></a></li>
         </ul>
       </address>
     </div>

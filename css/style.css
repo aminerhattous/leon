@@ -33,6 +33,7 @@ h2 {
   text-transform: capitalize;
   margin-bottom: 0;
   margin-top: 0;
+  font-weight: 800;
 }
 h3 {
   font-size: 18px;
@@ -249,4 +250,113 @@ header {
   width: 360px;
   height: 240px;
   top: 10px;
+}
+
+/* about */
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__image--container {
+  position: relative;
+}
+.about__image--container::before {
+  content: "";
+  background: #ebeced;
+  width: 35%;
+  height: 120%;
+  display: block;
+  position: absolute;
+  top: -40px;
+  left: -26px;
+  z-index: -1;
+}
+.about__image--container::after {
+  content: "";
+  background: var(--main-cl);
+  width: 35%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: -45px;
+  right: -26px;
+  z-index: -1;
+}
+.about__image {
+  width: 250px;
+}
+.vertical-line {
+  background-color: var(--main-cl);
+  height: 80px;
+  width: 120px;
+  display: block;
+  position: absolute;
+  bottom: 45px;
+  right: -140px;
+}
+.about__paragraph {
+  line-height: 2;
+}
+.about__paragraph:first-of-type {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.about__paragraph:last-of-type {
+  margin-top: 30px;
+}
+
+.about__linearrow {
+  width: 50%;
+  height: 4px;
+  background: var(--main-cl);
+}
+
+/* contact */
+.contact {
+  background: var(--sections-bg);
+  text-align: center;
+}
+
+.contact__description,
+.contact__email {
+  font-size: 35px;
+  font-weight: 800;
+}
+.contact__description {
+  margin-bottom: 0;
+  color: var(--secondary-cl);
+}
+.contact__email {
+  color: var(--main-cl);
+  text-decoration: none;
+}
+.contact__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contact__social--links {
+  list-style: none;
+  padding: 0;
+}
+.social__links {
+  color: var(--secondary-cl);
+}
+
+/* footer */
+
+.copyright {
+  color: #fff;
+  background-color: var(--secondary-cl);
+  text-align: center;
+  text-transform: capitalize;
+  padding: 30px 10px;
+  font-size: 18px;
+}
+.copyright__company--name {
+  color: var(--main-cl);
+  font-weight: bold;
 }
