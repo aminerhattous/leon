@@ -40,10 +40,6 @@ h3 {
   text-transform: capitalize;
 }
 /* header */
-header {
-  border: 2px solid red;
-}
-
 /* Navigation Bar */
 .menu {
   display: flex;
@@ -64,6 +60,10 @@ header {
   position: relative;
 }
 
+.nav__link {
+  text-decoration: none;
+  color: #000;
+}
 .menu__links--toggle {
   display: flex;
   flex-direction: column;
