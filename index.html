@@ -20,21 +20,28 @@
   <!-- landing page start -->
   <header class="landing">
     <!-- navigation menu -->
-    <nav class="menu">
+    <nav class="menu wrapper">
       <div class="menu__logo">
         <img src="/images/logo.png" alt="company logo">
       </div>
       <ul class="menu__links">
-        <li>services</li>
-        <li>portfolio</li>
-        <li>about</li>
-        <li>contact</li>
+        <div class="menu__links--toggle">
+          <span class="menu__links--line line--one"></span>
+          <span class="menu__links--line line--two"></span>
+          <span class="menu__links--line line--three"></span>
+        </div>
+        <div class="menu__links--container">
+          <li class="menu__link--item">services</li>
+          <li class="menu__link--item">portfolio</li>
+          <li class="menu__link--item">about</li>
+          <li class="menu__link--item">contact</li>
+        </div>
       </ul>
     </nav>
     <!-- hero -->
     <section class="hero">
       <div class="hero__container">
-        <h1>
+        <h1 class="hero__title">
           hello there
         </h1>
         <p class="hero__paraghraph">
@@ -47,33 +54,44 @@
 
   <!-- what we offer start -->
   <section class="offers">
-    <article class="offers__item">
-      <h3 class="offers__item__title">tell us you idea</h3>
-      <p class="offers__item-paragraph">
-        Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed <br> do eiusmod tempor incididunt <br> ut lab
-      </p>
-    </article>
-    <article class="offers__item">
-      <h3 class="offers__item__title">we will do all the work</h3>
-      <p class="offers__item-paragraph">
-        Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed <br> do eiusmod tempor incididunt <br> ut lab
-      </p>
-    </article>
-    <article class="offers__item">
-      <h3 class="offers__item__title">your product is worldwide</h3>
-      <p class="offers__item-paragraph">
-        Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed <br> do eiusmod tempor incididunt <br> ut lab
-      </p>
-    </article>
+    <div class="offers__container wrapper">
+      <article class="offers__item">
+        <i class="offers__icons fas fa-magic fa-3x"></i>
+        <h3 class="offers__item__title">tell us you idea</h3>
+        <p class="offers__item-paragraph">
+          Lorem ipsum dolor sit amet,
+          <br>consectetur adipiscing elit, sed do
+          <br> eiusmod tempor incididunt ut lab
+        </p>
+      </article>
+      <article class="offers__item">
+        <i class="offers__icons far fa-gem fa-3x"></i>
+        <h3 class="offers__item__title">we will do all the work</h3>
+        <p class="offers__item-paragraph">
+          Lorem ipsum dolor sit amet,
+          <br>consectetur adipiscing elit, sed do
+          <br> eiusmod tempor incididunt ut lab
+        </p>
+      </article>
+      <article class="offers__item">
+        <i class="offers__icons fas fa-globe-asia fa-3x"></i>
+        <h3 class="offers__item__title">your product is worldwide</h3>
+        <p class="offers__item-paragraph">
+          Lorem ipsum dolor sit amet,
+          <br>consectetur adipiscing elit, sed do
+          <br> eiusmod tempor incididunt ut lab
+        </p>
+      </article>
+    </div>
   </section>
   <!-- what we offer end -->
 
   <!-- services start-->
-  <section class="services">
+  <section class="services wrapper">
     <!-- services title -->
     <div class="services__header">
       <h2 class="services__title">services</h2>
-      <p class="services__subtitle">don't be busy, be productive</p>
+      <p class="services__subtitle">Don't be busy, be productive</p>
     </div>
     <!-- services content -->
     <div class="services__content">
@@ -90,8 +108,9 @@
             </h3>
             <p class="services__content__paragraph">
               Graphic design is the process of visual
-              <br>communication and problem-solving using one or
-              <br>more of typography, photography and illustration.
+              <br>communication and problem-solving
+              <br> using one ormore of typography,
+              <br> photography and illustration.
             </p>
           </div>
         </article>
@@ -105,8 +124,9 @@
               web design
             </h3>
             <p class="services__content__paragraph">
-              Web design encompasses many different skills and
-              <br>disciplines in the production and maintenance of
+              Web design encompasses many
+              <br> different skills and disciplines in the
+              <br> production and maintenance of
               <br>websites.
             </p>
           </div>
@@ -121,9 +141,10 @@
               UI &amp; ux
             </h3>
             <p class="services__content__paragraph">
-              Process of enhancing user satisfaction with a product
-              <br>by improving the usability, accessibility, and
-              <br>pleasure provided in the interaction.
+              Process of enhancing user satisfaction
+              <br> with a product by improving the
+              <br> usability, accessibility, and pleasure
+              <br> provided in the interaction.
             </p>
           </div>
         </article>
@@ -137,16 +158,17 @@
               web development
             </h3>
             <p class="services__content__paragraph">
-              Web development is a broad term for the work
-              <br>involved in developing a web site for the Internet or
-              <br>an intranet.
+              Web development is a broad term for
+              <br>the work involved in developing a web
+              <br> site for the Internet or an intranet.
             </p>
           </div>
         </article>
       </section>
       <!-- services side image -->
       <aside class="services__aside__image">
-        <img src="/images/services.jpg" alt="mountains view">
+        <img class="services__sideimage" src="/images/services.jpg" alt="mountains view">
+        <span class="horizontal__line"></span>
       </aside>
     </div>
   </section>
@@ -159,8 +181,8 @@
       <h2 class="portfolio__title">portfolio</h2>
       <p class="portfolio__subtitle">if you do it right, it will last forever.</p>
     </div>
-    <!-- services content -->
-    <div class="services__content">
+    <!-- portfolio content -->
+    <div class="portfolio__content">
       <!-- portfolio one -->
       <article class="portfolio__item">
         <img class="portfolio__image" src="/images/portfolio-1.jpg" alt="portfolio image">
