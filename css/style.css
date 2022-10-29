@@ -124,7 +124,7 @@ h3 {
 /* Hero */
 .hero {
   overflow: hidden;
-  background-image: url("/images/landing.jpg");
+  background-image: url("./images/landing.jpg");
   height: calc(100vh - 68px);
   background-size: cover;
   background-repeat: no-repeat;
