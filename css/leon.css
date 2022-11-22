@@ -240,7 +240,7 @@ I used the grid instead of using flex also iv'e
 added flex wrap to the articles inside services 
 to make sure that when we get to smaller screens
 the content will stack one on top of the other.
-! Note: look at the media query in top to under stand.
+! Note: look at the media query in top to understand.
 @media screen and (max-width: 760px) {
   .services__articles {
     display: flex;
