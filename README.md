@@ -1,6 +1,6 @@
 # leon
 
-leon is a psd design turned into website by elzero web school using HTML &amp; CSS.
+leon is a psd design turned into webpage HTML &amp; CSS.
 
 ## project preview :
 
