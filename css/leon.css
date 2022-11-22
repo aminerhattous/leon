@@ -419,3 +419,19 @@ the content will stack one on top of the other.
 }
 
 /*! Contact End */
+/*! Footer Start */
+footer {
+  background-color: var(--clr-dark-blue);
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 10px;
+}
+footer p {
+  color: inherit;
+}
+footer span {
+  color: var(--clr-light-green);
+  font-weight: bold;
+}
+/*! Footer End */
